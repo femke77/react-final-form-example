@@ -3,16 +3,13 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import { Field, Form, FormSpy } from "react-final-form";
-
 import { Typography } from "@mui/material";
-
 import AppForm from "../components/AppForm";
 import withRoot from "../withRoot";
-import {email, required} from "../form/validation"
+import { email, required } from "../form/validation";
 import RFTextField from "../form/RFTextField";
 import FormButton from "../form/FormButton";
 import FormFeedback from "../form/FormFeedback";
-
 import { ADD_USER } from "../utils/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
@@ -37,7 +34,7 @@ function SignUp() {
       }
     }
     if (error) {
-      alert (error)
+      alert(error);
       window.location.reload(false);
     }
 
@@ -62,7 +59,6 @@ function SignUp() {
 
   return (
     <React.Fragment>
-
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
@@ -132,7 +128,7 @@ function SignUp() {
                 type="password"
                 margin="normal"
               />
-            
+
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
                   submitError ? (
@@ -154,7 +150,6 @@ function SignUp() {
           )}
         </Form>
       </AppForm>
-  
     </React.Fragment>
   );
 }

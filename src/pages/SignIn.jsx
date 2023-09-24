@@ -15,7 +15,6 @@ import { LOGIN_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 function SignIn() {
-
   const [sent, setSent] = React.useState(false);
   const [signin, { error }] = useMutation(LOGIN_USER);
 
@@ -29,7 +28,7 @@ function SignIn() {
       }
     }
     if (error) {
-      alert (error)
+      alert(error);
       window.location.reload(false);
     }
 
@@ -40,12 +39,11 @@ function SignIn() {
     setSent(true);
 
     try {
-      const { data} = await signin({
+      const { data } = await signin({
         variables: { ...values },
       });
-      if (data && data.login.token ) {
+      if (data && data.login.token) {
         Auth.login(data.login.token);
-
       } else if (error) {
         console.log(error);
       }
@@ -56,7 +54,6 @@ function SignIn() {
 
   return (
     <React.Fragment>
-   
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
@@ -132,7 +129,6 @@ function SignIn() {
           </Link>
         </Typography>
       </AppForm>
-
     </React.Fragment>
   );
 }
