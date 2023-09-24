@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Home from './pages/Home';
 // import Signin from './pages/SignIn';
 import Signup from './pages/SignUp';
+import SignIn from './pages/SignIn';
 // import Appointment from './pages/Appointment';
 // import Profile from './pages/Profile';
 
@@ -48,6 +49,7 @@ function App() {
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
             <Signup/>
+            <SignIn/>
             <Routes>
               {/* <Route 
                 path="/"
