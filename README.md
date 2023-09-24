@@ -1,8 +1,12 @@
-# React + Vite
+# React Final Form example with MUI theme and example of customized Button
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql)
 
-Currently, two official plugins are available:
+This is just an example of the client side of react final forms. Final form is so amazing because it handles state for you, and this code includes all the basic validation as well as goodies like "in progress" during login/signup and button disabling until the form is correct. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I added an MUI theme and an example of taking over customization of the Button. 
+
+This is a client side for an Apollo GraphQL App. Can be cloned and added to and customized as needed. 
