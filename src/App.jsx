@@ -44,30 +44,29 @@ function App() {
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
-            <Signup/>
-            <SignIn/>
+      
             <Routes>
-              {/* <Route 
+              <Route 
                 path="/"
-                element={<Home />}
-              />
-              <Route 
-                path="/signin" 
-                element={<Signin />}
-              />
-              <Route 
-                path="/signup" 
                 element={<Signup />}
               />
               <Route 
+                path="/signin" 
+                element={<SignIn />}
+              />
+              {/* <Route 
+                path="/signup" 
+                element={<Signup />}
+              /> */}
+              {/* <Route 
                 path="/appointment" 
                 element={<Appointment />}
-              />
-              <Route 
+              /> */}
+              {/* <Route 
                 path="/profile" 
                 element={<Profile />}
-              />
-     */}
+              /> */}
+    
             </Routes>
           </div>
         </div>

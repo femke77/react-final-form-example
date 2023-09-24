@@ -9,7 +9,7 @@ import { email, required } from "../form/validation";
 import RFTextField from "../form/RFTextField";
 import FormButton from "../form/FormButton";
 import FormFeedback from "../form/FormFeedback";
-
+import withRoot from "../withRoot";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
@@ -64,7 +64,7 @@ function SignIn() {
           </Typography>
           <Typography variant="body2" align="center">
             {"Not a member yet? "}
-            <Link href="/sign-up/" align="center" underline="always">
+            <Link href="/" align="center" underline="always">
               Sign Up here
             </Link>
           </Typography>
@@ -137,4 +137,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default withRoot(SignIn);

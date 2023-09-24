@@ -7,7 +7,7 @@ import { Field, Form, FormSpy } from "react-final-form";
 import { Typography } from "@mui/material";
 
 import AppForm from "../components/AppForm";
-
+import withRoot from "../withRoot";
 import {email, required} from "../form/validation"
 import RFTextField from "../form/RFTextField";
 import FormButton from "../form/FormButton";
@@ -69,7 +69,7 @@ function SignUp() {
             Sign Up
           </Typography>
           <Typography variant="body2" align="center">
-            <Link href="/sign-in/" underline="always">
+            <Link href="/signin/" underline="always">
               Already have an account?
             </Link>
           </Typography>
@@ -159,4 +159,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default withRoot(SignUp);

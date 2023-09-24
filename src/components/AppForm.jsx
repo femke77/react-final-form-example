@@ -12,8 +12,9 @@ function AppForm(props) {
     <Box
       sx={{
         display: 'flex',
-        backgroundImage: 'url(/static/onepirate/appCurvyLines.png)',
-        backgroundRepeat: 'no-repeat',
+        // replace with your own bg!!
+        // backgroundImage: 'url(/static/onepirate/appCurvyLines.png)',
+        // backgroundRepeat: 'no-repeat',
       }}
     >
       <Container maxWidth="sm">
