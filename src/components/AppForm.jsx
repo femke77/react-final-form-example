@@ -20,8 +20,7 @@ function AppForm(props) {
       <Container maxWidth="sm">
         <Box sx={{display:'flex', justifyContent: 'center', mt: 7, mb: 12 }}>
           <Paper
-            elevation={3}
-            
+            // elevation={3}          
             background="light"
             sx={{ py: { xs: 4, md: 8 }, px: { xs: 3, md: 6 } }}
           >
